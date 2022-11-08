@@ -1,2 +1,50 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+Todas as luzes sendo ligdas em ordem (vermelho, amarelo e verde)
+
+
+// C++ code
+//
+void setup()
+{
+  pinMode(13,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(13, HIGH);//led Vermelho pino 13
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  
+  digitalWrite(12, HIGH);//led amerlo pino 12
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(12, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+  
+  digitalWrite(11, HIGH);//led Verde pino 11
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(11, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+
+
+Todas as luzes sendo ligadas iguais 
+// C++ code
+//
+void setup()
+{
+  pinMode(13,OUTPUT);
+  pinMode(12,OUTPUT);
+  pinMode(11,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(13, HIGH);//led Vermelho pino 13
+  digitalWrite(12, HIGH);
+  digitalWrite(11, HIGH);//led Verde pino 11
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
